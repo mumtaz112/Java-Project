@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="document.getElementById('bulb').src='./on.jpg'">Bulb On</button>
+   <button onclick="document.getElementById('bulb').src='./off.png'">Bulb Off</button> 
+   -->
+   <!-- <input type="checkbox" id="chk" value="bulb On /Off" onclick="chkstate()">
+  <img src="off.png" id="bulb" >  -->
+  <!-- <input type="number" value="number" id="numb">
+  <select id="slct">
+    <option value="Select Value" disabled>Select Value</option>
+    <option>Centigrade</option>
+    <option>Farenhiet</option>
+  </select>
+  <input type="text" id="output">
+  <input type="button" onclick="chktemp()" value="Check"> -->
+  <input type="number" value="number" id="numb">
+  <select id="slct">
+    <option value="Select Value" disabled>Select Value</option>
+    <option>Degree</option>
+    <option>Radian</option>
+  </select>
+  <input type="text" id="output">
+  <input type="button" onclick="chktemp()" value="Check">
+</body>
+<script>
+//   function chktemp(){
+//   var drpdown=document.getElementById('slct').value;
+//   var number=document.getElementById('numb').value;
+
+//  if(drpdown == 'Centigrade')
+//  {
+//   var centigrade=5/9*(number-32);
+//   var otpt=document.getElementById('output').value=centigrade;
+//   console.log(centigrade)
+//  }
+//  else if(drpdown == 'Farenhiet')
+//  {
+//   var farenhiiet=(number*9/5)+32;
+//   var otpt=document.getElementById('output').value=farenhiiet;
+//   console.log(farenhiiet)
+//  }
+//   }
+function chktemp(){
+  var drpdown=document.getElementById('slct').value;
+  var number=document.getElementById('numb').value;
+
+ if(drpdown == 'Degree')
+ {
+  var degree=number*3.14/180;
+  var otpt=document.getElementById('output').value=degree;
+  console.log(degree)
+ }
+ else if(drpdown == 'Radian')
+ {
+  var radiann=number*180/3.14;
+  var otpt=document.getElementById('output').value=radiann;
+  console.log(radiann)
+ }
+  }
+  
+//   function chkstate(){
+//   if(chk.checked)
+//   {
+//     document.getElementById('bulb').src='../on.jpg';
+//   }
+//   else{
+
+// document.getElementById('bulb').src='../off.png';
+//   }
+//   }
+//
+</script>
+</html>
